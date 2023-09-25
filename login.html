@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" rel="icon"
+        sizes="192x192" href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+
+    <title>Login</title>
+    <style>
+        .sign-up-box {
+            margin-top: 5%;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+
+        .card {
+            padding-top: 5%;
+            align-items: center;
+            height: auto;
+
+        }
+
+        .card-body {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .fb-btn {
+            width: 100%;
+            text-align: center;
+            padding: 2px;
+            margin-bottom: 8px;
+            background-color: #0095f6;
+            border-radius: 10px;
+            border-color: #77A7FF;
+        }
+
+        .btn-no-border {
+            background-color: white;
+            border: none;
+            color: #385185;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+
+        .input {
+            width: 100%;
+            font-size: 14px;
+            height: 40px;
+            padding: 10px;
+            border: 1px #bfb9b9 solid;
+            border-radius: 5px;
+            background-color: hsl(0, 0%, 98%);
+        }
+
+        .input:focus {
+            outline: none;
+        }
+
+        .input-box {
+            margin-top: 10px;
+
+        }
+
+        /* Placeholder Start */
+        .input-box {
+            margin-top: 10px;
+            position: relative;
+
+        }
+
+        .input-box .floating-label {
+            position: absolute;
+            pointer-events: none;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+            transition: 0.2s ease all;
+            color: #737373;
+
+        }
+
+        .input-box input:focus~.floating-label,
+        .input-box input:not(:focus):valid~.floating-label {
+            top: 3px;
+            left: 10px;
+            font-size: 9px;
+            opacity: 1;
+
+        }
+
+        /* Placeholder End */
+        /* ss */
+        .input-box .icon-checked {
+            position: absolute;
+            right: 15px;
+            bottom: 11px;
+        }
+
+        .input-box #passwordValid {
+            position: absolute;
+            right: 55px;
+            bottom: 10px;
+        }
+
+        .input-box #showpassword {
+            position: absolute;
+            right: 15px;
+            bottom: 11px;
+            color: #282828;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        #showpassword:hover {
+            cursor: pointer;
+            opacity: 0.5;
+        }
+
+
+
+
+        .last-span-div {
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 10px;
+        }
+
+        .last-span {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            color: #737373;
+
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #0095f6;
+        }
+
+        .second-box-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            /* align-items: center; */
+            text-align: center;
+
+        }
+
+        .second-box {
+            display: flex;
+            border: 1px #bfb9b9 solid;
+            border-radius: 5px;
+            width: 23rem;
+            height: 80px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .bottom {
+            margin-top: 20px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        ._aa5q {
+            /* width: 100px; */
+            height: 40px;
+        }
+
+        .foot {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #737373;
+            padding: 0%;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .likf {
+            color: #737373;
+        }
+
+        .likf:hover {
+            text-decoration: underline;
+
+        }
+
+        .lang {
+            border: none;
+            width: 60px;
+            color: #737373;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class=' sign-up-box d-flex'>
+        <div class="card " style="width:23rem;">
+
+            <div class="card-body ">
+                <div aria-disabled="false" role="button" tabindex="0" style="cursor: pointer; height: auto;">
+                    <i aria-label="Instagram" class="" role="img"
+                        style="background-image: url(&quot;https://static.cdninstagram.com/rsrc.php/v3/yS/r/ajlEU-wEDyo.png&quot;); background-position: 0px -52px; background-size: auto; width: 175px; height: 51px; background-repeat: no-repeat; display: inline-block;"></i>
+                </div>
+                <div>
+
+                    <!-- <div class="input-box">
+                        <input type="text" class="input" name="login-id" aria-label="Phone number, username, or email"
+                            id="login-id" placeholder="Phone number, username, or email">
+                    </div> -->
+
+                    <div class="input-group input-box ">
+
+                        <input type="text" class="input" required id="email" name="email">
+                        <span class="floating-label">Mobile Number or Email</span>
+                    </div>
+
+                    <!-- <div class="input-box" style="margin-bottom: 20px;">
+                        <input type="password" class="input" name="password" aria-label="Password" id="passowrd"
+                            placeholder="Password">
+                    </div> -->
+                    <div class="input-group input-box" style="margin-bottom: 20px;">
+                        <input type="password" onkeyup="passwordValidation()" class="input" required name="password"
+                            aria-label="Password" id="password">
+                        <span class="floating-label">Password</span>
+                        <span class="show-password" id="showpassword"></span>
+
+                    </div>
+                </div>
+
+
+                <button type="button" onclick="logIn()" class="btn btn-primary fb-btn "
+                    style="height:30px ; font-weight: 500;"> Log
+                    in</button>
+
+                <div class="row mt-1  ">
+                    <div class="col-5 ">
+                        <hr class="hr hr-blurry " />
+                    </div>
+                    <div class="col-2 mt-1  ">
+                        <p style="font-size: small; color: #737373;font-weight: 500; ">OR</p>
+                    </div>
+                    <div class="col-5 ">
+                        <hr class="hr hr-blurry  " />
+                    </div>
+                </div>
+
+                <button type="button" class="btn-no-border mb-1"> <i class="fa-brands fa-square-facebook fa-lg"
+                        style="color: #385185;"></i> Log in with Facebook</button>
+                <div style="display: inline-block;">
+                    <span id="loginMessage"
+                        style="color: #ed4956; font-size: 14px; font-weight: 500; margin: 1px;"></span>
+                </div>
+
+                <button type="button" class="btn-no-border mt-1 pt-2" style="font-size: 12px; font-weight: 400;">Forgot
+                    password?
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="second-box-container">
+
+        <div class="  second-box  ">
+            <h5 class="" style="font-size: 14px; padding-top: 0%;">Don't have an account? <a href="home.html">Sign
+                    up</a>
+            </h5>
+        </div>
+    </div>
+    <div class="container bottom">
+        <span class=""> Get the app.</span>
+        <br><br>
+
+        <div class="d-inline-flex mt-1"><img alt="Download on the App Store" class="_aa5q"
+                src="https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png"></div>
+        <div class="d-inline-flex"><img alt="Get it on Google      Play" class="_aa5q"
+                src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--------------------------- Footer -------------------->
+    <div class="container foot ">
+        <div class="row">
+            <div class="col-lg-1 col-md-2 "><a href="https://about.meta.com/" class="likf">Meta</a></div>
+            <div class="col-lg-1 col-md-2"><a href="https://about.instagram.com/" class="likf">About</a></div>
+            <div class="col-lg-1 col-md-2"><a href="https://about.instagram.com/blog/" class="likf">Blog</a></div>
+            <div class="col-lg-1 col-md-2"><a href="https://about.instagram.com/about-us/careers" class="likf">Jobs</a>
+            </div>
+            <div class="col-lg-1 col-md-2"><a href="https://help.instagram.com/" class="likf">Help</a></div>
+            <div class="col-lg-1 col-md-2"><a href="https://developers.facebook.com/docs/instagram" class="likf">API</a>
+            </div>
+            <div class="col-lg-1 col-md-2"><a href="https://help.instagram.com/581066165581870/" class="likf">Top
+                    Accounts</a></div>
+            <div class="col-lg-1 col-md-2"><a href="https://www.instagram.com/explore/locations/"
+                    class="likf">Location</a></div>
+            <div class="col-lg-1 col-md-2"><a href="https://www.threads.net/" class="likf">Threads</a> </div>
+            <div class="col-lg-1 col-md-2"><a href="https://www.facebook.com/help/instagram/261704639352628"
+                    class="likf">Contact Uploading & Non-Users</a></div>
+            <div class="col-lg-1 col-md-2"><a href="https://www.instagram.com/web/lite/" class="likf">Instagram Lite</a>
+            </div>
+            <div class="col-lg-1 col-md-2"><a href="https://about.meta.com/technologies/meta-verified/"
+                    class="likf">Meta Verified</a></div>
+        </div>
+
+        <div class="row" style="margin-top: 25px; margin-bottom: 100px;">
+            <div class="col-6  " style="text-align: end;">
+                <select class="lang">
+                    <option value="af">Afrikaans</option>
+                    <option value="cs">Čeština</option>
+                    <option value="da">Dansk</option>
+                    <option value="de">Deutsch</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="en" selected>English</option>
+                    <option value="en-gb">English (UK)</option>
+                    <option value="es">Español (España)</option>
+                </select>
+            </div>
+            <div class="col-6 " style="text-align: start;">
+                <span class="" dir="auto"
+                    style="line-height: var(--base-line-clamp-line-height); --base-line-clamp-line-height: 16px; text-align: start;">©
+                    2023
+                    Instagram from Meta</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script>
+
+        let showMessage = document.getElementById('showpassword')
+        let loginMessage = document.getElementById('loginMessage')
+
+
+        function passwordValidation() {
+            showMessage.innerHTML = 'Show'
+
+        }
+
+        const togglePassword = document.getElementById('showpassword');
+        togglePassword.addEventListener('click', () => {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            const visual = togglePassword.textContent === 'Show' ? 'Hide' : 'Show';
+            togglePassword.textContent = visual
+        });
+
+
+        function logIn() {
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let formData = JSON.parse(localStorage.getItem('formData')) || [];
+            let userExist = formData.length &&
+                JSON.parse(localStorage.getItem('formData')).some(data => data.email == email && data.password == password);
+            if (!userExist) {
+                loginMessage.innerHTML = "Sorry, your password was incorrect. Please double - check your password."
+            }
+            else {
+                window.open("home.html", "_self");
+
+            }
+
+        };
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
